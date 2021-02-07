@@ -19,7 +19,7 @@ function App() {
         <Heading maxW="400px" mb="10" mx="auto" textAlign="center">
           Create New Todo
         </Heading>
-        <TodoForm marginBottom="5px" />
+        <TodoForm marginBottom="10px" />
       </Box>
     </div>
   );

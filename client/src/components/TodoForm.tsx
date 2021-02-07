@@ -56,7 +56,7 @@ export default function TodoForm({ marginBottom }: Props): ReactElement {
             {errors.todo && errors.todo.message}
           </FormErrorMessage>
         </FormControl>
-        <Button w="100%" maxW="400px" mt="5px" type="submit">
+        <Button w="100%" maxW="400px" mt="10px" type="submit">
           Add Todo
         </Button>
         <TodoList todos={todos} removeTodo={removeTodo} />

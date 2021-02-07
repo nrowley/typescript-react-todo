@@ -14,7 +14,7 @@ interface Props {
 
 export default function TodoList({ todos, removeTodo }: Props): ReactElement {
   return (
-    <Box maxW="400px" w="100%">
+    <Box mt="50px" maxW="400px" w="100%">
       {todos.map((todo) => (
         <Todo
           key={todo.id}
