@@ -4,11 +4,20 @@ import App from "./App";
 import reportWebVitals from "./reportWebVitals";
 import { ChakraProvider } from "@chakra-ui/react";
 
+import { ApolloClient, ApolloProvider, InMemoryCache } from "@apollo/client";
+
+const client = new ApolloClient({
+  uri: "https://48p1r2roz4.sse.codesandbox.io",
+  cache: new InMemoryCache(),
+});
+
 ReactDOM.render(
   <React.StrictMode>
-    <ChakraProvider>
-      <App />
-    </ChakraProvider>
+    <ApolloProvider client={client}>
+      <ChakraProvider>
+        <App />
+      </ChakraProvider>
+    </ApolloProvider>
   </React.StrictMode>,
   document.getElementById("root")
 );
