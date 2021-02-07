@@ -200,6 +200,14 @@
   dependencies:
     "@chakra-ui/utils" "1.2.0"
 
+"@chakra-ui/icons@^1.0.5":
+  version "1.0.5"
+  resolved "https://registry.yarnpkg.com/@chakra-ui/icons/-/icons-1.0.5.tgz#21eee12b9ab12da0430c62ea99e6081a6cec7b14"
+  integrity sha512-l8CgisPAS44ehKLw/hoHI6dfSX7pOAfylv8QkINVPEzhHwnNIg0wHzcm1cGkRXuq3DN8G0z88KmFegFFp02yiA==
+  dependencies:
+    "@chakra-ui/icon" "1.1.1"
+    "@types/react" "^17.0.0"
+
 "@chakra-ui/image@1.0.7":
   version "1.0.7"
   resolved "https://registry.yarnpkg.com/@chakra-ui/image/-/image-1.0.7.tgz#ec49b2abb05549d4358675a8df860608294d19fe"
@@ -718,10 +726,28 @@
   resolved "https://registry.yarnpkg.com/@types/parse-json/-/parse-json-4.0.0.tgz#2f8bb441434d163b35fb8ffdccd7138927ffb8c0"
   integrity sha512-//oorEZjL6sbPcKUaCdIGlIUeH26mgzimjBB77G6XRgnDl/L5wOnpyBGRe/Mmf5CVW3PwEBE1NjiMZ/ssFh4wA==
 
+"@types/prop-types@*":
+  version "15.7.3"
+  resolved "https://registry.yarnpkg.com/@types/prop-types/-/prop-types-15.7.3.tgz#2ab0d5da2e5815f94b0b9d4b95d1e5f243ab2ca7"
+  integrity sha512-KfRL3PuHmqQLOG+2tGpRO26Ctg+Cq1E01D2DMriKEATHgWLfeNDmq9e29Q9WIky0dQ3NPkd1mzYH8Lm936Z9qw==
+
+"@types/react@^17.0.0":
+  version "17.0.1"
+  resolved "https://registry.yarnpkg.com/@types/react/-/react-17.0.1.tgz#eb1f1407dea8da3bc741879c1192aa703ab9975b"
+  integrity sha512-w8t9f53B2ei4jeOqf/gxtc2Sswnc3LBK5s0DyJcg5xd10tMHXts2N31cKjWfH9IC/JvEPa/YF1U4YeP1t4R6HQ==
+  dependencies:
+    "@types/prop-types" "*"
+    csstype "^3.0.2"
+
 "@types/tinycolor2@1.4.2":
   version "1.4.2"
   resolved "https://registry.yarnpkg.com/@types/tinycolor2/-/tinycolor2-1.4.2.tgz#721ca5c5d1a2988b4a886e35c2ffc5735b6afbdf"
   integrity sha512-PeHg/AtdW6aaIO2a+98Xj7rWY4KC1E6yOy7AFknJQ7VXUGNrMlyxDFxJo7HqLtjQms/ZhhQX52mLVW/EX3JGOw==
+
+"@types/uuid@^8.3.0":
+  version "8.3.0"
+  resolved "https://registry.yarnpkg.com/@types/uuid/-/uuid-8.3.0.tgz#215c231dff736d5ba92410e6d602050cce7e273f"
+  integrity sha512-eQ9qFW/fhfGJF8WKHGEHZEyVWfZxrT+6CLIJGBcZPfxUh/+BnEj+UCGYMlr9qZuX/2AltsvwrGqp0LhEW8D0zQ==
 
 "@types/warning@^3.0.0":
   version "3.0.0"
@@ -1047,6 +1073,11 @@ react-focus-lock@2.4.1:
     use-callback-ref "^1.2.1"
     use-sidecar "^1.0.1"
 
+react-hook-form@^6.15.1:
+  version "6.15.1"
+  resolved "https://registry.yarnpkg.com/react-hook-form/-/react-hook-form-6.15.1.tgz#57d887ec4dac5a6c0099902171aa39cc893f7bca"
+  integrity sha512-bL0LQuQ3OlM3JYfbacKtBPLOHhmgYz8Lj6ivMrvu2M6e1wnt4sbGRtPEPYCc/8z3WDbjrMwfAfLX92OsB65pFA==
+
 react-is@^16.7.0, react-is@^16.8.1:
   version "16.13.1"
   resolved "https://registry.yarnpkg.com/react-is/-/react-is-16.13.1.tgz#789729a4dc36de2999dc156dd6c1d9c18cea56a4"
@@ -1170,6 +1201,11 @@ use-sidecar@^1.0.1:
   dependencies:
     detect-node-es "^1.0.0"
     tslib "^1.9.3"
+
+uuid@^8.3.2:
+  version "8.3.2"
+  resolved "https://registry.yarnpkg.com/uuid/-/uuid-8.3.2.tgz#80d5b5ced271bb9af6c445f21a1a04c606cefbe2"
+  integrity sha512-+NYs2QeMWy+GWFOEm9xnn6HCDp0l7QBD7ml8zLUmJ+93Q5NF0NocErnwkTkXVFNiX3/fpC6afS8Dhb/gz7R7eg==
 
 warning@^4.0.3:
   version "4.0.3"
