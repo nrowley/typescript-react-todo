@@ -36,10 +36,6 @@ export default function TodoForm({ marginBottom }: Props): ReactElement {
     setTodos(todos.filter((t) => t.id !== id));
   };
 
-  useEffect(() => {
-    console.log(todos);
-  }, [todos]);
-
   return (
     <Box mb={marginBottom}>
       <form onSubmit={handleSubmit(onSubmit)}>
