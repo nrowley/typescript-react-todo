@@ -34,7 +34,7 @@ export default function Todo({ id, name, removeTodo }: Props): ReactElement {
           </GridItem>
           <GridItem colEnd={4}>
             <Box>
-              <CloseIcon onClick={() => removeTodo(id)} />
+              <CloseIcon color="red" onClick={() => removeTodo(id)} />
             </Box>
           </GridItem>
         </Grid>

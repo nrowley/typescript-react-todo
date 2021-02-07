@@ -17,7 +17,7 @@ export default function ColorMode({}: Props): ReactElement {
           </FormLabel>
           <Switch
             name="colorswitch"
-            colorScheme="teal"
+            colorScheme="green"
             size="lg"
             onChange={toggleColorMode}
           />
