@@ -29,7 +29,7 @@ export class TodosResolver {
     @Arg("title", () => String) title: string,
     @Ctx() { em }: MyContext
   ): Promise<Todo | null> {
-    const todo = em.create(Todo, { title });
+    const todo = em.create(Todo, { title, completed: false });
     await em.persistAndFlush(todo);
 
     return todo;
@@ -57,5 +57,18 @@ export class TodosResolver {
         deleted: false,
       };
     }
+  }
+
+  @Mutation(() => Todo)
+  async completeTodo(
+    @Arg("id", () => Int) id: number,
+    @Ctx() { em }: MyContext
+  ): Promise<Todo | null> {
+    const todo = await em.findOne(Todo, { id });
+    if (todo) {
+      todo.completed = true;
+    }
+
+    return todo;
   }
 }

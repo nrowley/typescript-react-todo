@@ -20,4 +20,8 @@ export default class Todo {
   @Field(() => String)
   @Property({ type: "text" })
   title!: string;
+
+  @Field(() => Boolean)
+  @Property()
+  completed!: boolean;
 }
