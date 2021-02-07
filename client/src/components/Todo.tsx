@@ -4,11 +4,11 @@ import React, { ReactElement } from "react";
 
 interface Props {
   id: string;
-  name: string;
+  title: string;
   removeTodo(id: string): void;
 }
 
-export default function Todo({ id, name, removeTodo }: Props): ReactElement {
+export default function Todo({ id, title, removeTodo }: Props): ReactElement {
   return (
     <Box
       id={id}
@@ -30,7 +30,7 @@ export default function Todo({ id, name, removeTodo }: Props): ReactElement {
       >
         <Grid templateColumns="repeat(2,1fr)">
           <GridItem colStart={0}>
-            <Box>{name}</Box>
+            <Box>{title}</Box>
           </GridItem>
           <GridItem colEnd={4}>
             <Box>

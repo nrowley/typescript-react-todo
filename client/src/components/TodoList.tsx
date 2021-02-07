@@ -4,7 +4,7 @@ import Todo from "./Todo";
 
 type todo = {
   id: string;
-  name: string;
+  title: string;
 };
 
 interface Props {
@@ -15,13 +15,8 @@ interface Props {
 export default function TodoList({ todos, removeTodo }: Props): ReactElement {
   return (
     <Box mt="50px" maxW="400px" w="100%">
-      {todos.map((todo) => (
-        <Todo
-          key={todo.id}
-          id={todo.id}
-          name={todo.name}
-          removeTodo={removeTodo}
-        />
+      {todos.map(({ id, title }) => (
+        <Todo key={id} id={id} title={title} removeTodo={removeTodo} />
       ))}
     </Box>
   );

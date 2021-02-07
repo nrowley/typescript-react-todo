@@ -3,21 +3,13 @@ import ReactDOM from "react-dom";
 import App from "./App";
 import reportWebVitals from "./reportWebVitals";
 import { ChakraProvider } from "@chakra-ui/react";
-
-import { ApolloClient, ApolloProvider, InMemoryCache } from "@apollo/client";
-
-const client = new ApolloClient({
-  uri: "https://48p1r2roz4.sse.codesandbox.io",
-  cache: new InMemoryCache(),
-});
+import { client } from "./util/ApolloClient";
 
 ReactDOM.render(
   <React.StrictMode>
-    <ApolloProvider client={client}>
-      <ChakraProvider>
-        <App />
-      </ChakraProvider>
-    </ApolloProvider>
+    <ChakraProvider>
+      <App />
+    </ChakraProvider>
   </React.StrictMode>,
   document.getElementById("root")
 );
