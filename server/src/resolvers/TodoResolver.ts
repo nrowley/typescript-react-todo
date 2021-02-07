@@ -66,7 +66,8 @@ export class TodosResolver {
   ): Promise<Todo | null> {
     const todo = await em.findOne(Todo, { id });
     if (todo) {
-      todo.completed = true;
+      //flip flop the completed status
+      todo.completed = !todo.completed;
     }
 
     return todo;
